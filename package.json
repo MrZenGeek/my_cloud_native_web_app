@@ -1,0 +1,34 @@
+{
+  "name": "monorepo-template",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "generate": "plop --plopfile ./generators/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:mikenikles/monorepo-template.git"
+  },
+  "author": "Mike, @mikenikles",
+  "license": "ISC",
+  "devDependencies": {
+    "git-config-path": "^2.0.0",
+    "husky": "^4.2.1",
+    "lerna": "^3.20.2",
+    "lodash": "^4.17.15",
+    "npm-run-all": "^4.1.5",
+    "parse-git-config": "^3.0.0",
+    "plop": "^2.5.3",
+    "plop-helper-git-config": "^1.0.0",
+    "prettier": "2.0.4",
+    "pretty-quick": "^2.0.1",
+    "typescript": "^3.7.5"
+  }
+}
